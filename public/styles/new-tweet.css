@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  border-color: transparent;
+  margin: 2em;
+  padding: 0px 8px 40px 8px;
+
+}
+
+
+.new-tweet_input {
+  border-color: transparent;
+  background-color: transparent;
+  border-bottom-color: black;
+  border-bottom-width: 1.5px;  
+  font-weight: 600;
+}
+
+.counterParent {
+  font-family: 'Bungee', cursive;
+}
+
+.counter {
+  float: right;
+  font-size: 1em;
+  font-family: 'Bungee', cursive;
+}
+
+.button {
+  background-color: #4056A1;
+  color: #ffffff;
+}
+
+/* .new-tweet {
+  
+
+}
+
+.new-tweet__header {
+  
+} */

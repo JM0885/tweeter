@@ -1,0 +1,16 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: #c27b00;
+
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+}
