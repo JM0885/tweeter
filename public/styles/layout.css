@@ -22,7 +22,103 @@ body {
 
 }
 
+main {
+  width: 90%;
+  background-color: inherit;
+  margin: auto;
+}
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: .25em;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+}
+
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
+   
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  svg {
+    fill: white;
+    width: 24px;
+    height: 12px;
+   }
+    
+  svg:hover {
+    background-color: black;
+  }
+  svg:svg {
+    fill: white;
+  }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ 
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .feature {
+    width: 33.3%;
+    line-height: 600px;
+  }
+
+  .content {
+    width: 66.7%;
+    float: right
+  }
+
+  .footer {
+    clear: right;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .hero {
+    width: 33.3%;
+    float: left;
+  }
+
+  .feature {
+    line-height: 300px;
+  }
+
+  .menu {
+    background-color: #111111;
+    color: #f0f0f0;
+    text-align: left;
+  }
+
+  .tagline {
+    display: inline;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    color: tomato;
+    float: right;
+  }
+
+  .main {
+    max-width: 1024px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}

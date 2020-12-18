@@ -1,9 +1,38 @@
-nav {
-  background-color: #4056A1;
-  height: 120px;
+
+.nav {
+  position: fixed;
+  max-height: 125px;
   width: 100%;
-  color: #ffffff;
+  padding: 1.5em;
+  background-color: #3600e6;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+
+.title {
   display: flex;
-  align-items: center;
-  padding-inline: 1.5em;
+  color: #FFFFFF;
+  font-size: 3.5vh;
+}
+
+i {
+  border: solid black;
+  float: right;
+  border-width: 0 4px 4px 0;
+  padding: 12px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#arrow {
+  text-align: center;
+  position: relative;
+  transition: bottom ease .5s;
+}
+
+#arrow:hover {
+  bottom: -10px;
+  cursor: pointer;
 }

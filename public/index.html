@@ -15,45 +15,61 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
 
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script async type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav class=>
-      <span>tweeter</span>
-
+    <nav class="nav">
+      <div class="title">tweeter</div>
+          <div id="arrow"><i class="arrow down"></i>
+          </div>
+      </div>
     </nav>
 
-    <header>
-      <div class="avatar">
+    <header class="display">
+      <div>
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
-      <div class="name">
-          <h2>Your Name</h2>
+      <div>
+          <h2 id="name">Jared Mosher</h2>
       </div>
   </header>
   
 
  
-  <main class="container">
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form class= "new-tweet" action ="/tweets" method = "POST">
-        <textarea class="new-tweet_input" name="text" placeholder="What are you humming about?"></textarea>
-        <div class="counterParent">
-          <button type="submit" class="button">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-  </main>
-</body>
+    <main class="container">
+      <section class="new-tweet">
+        <p class="error-message">Should be hidden</p>
+        <h3>Compose Tweet</h3>
+        <form>
+          <textarea id="tweet_input" name="text" placeholder="What are you humming about?"></textarea>
+          <br>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section id="tweet_container">
+        <h3>Your Newsfeed</h3>
+      </section>
+      <a class="top-link hide" href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <span class="screen-reader-text"></span>
+      </a>
+    </main>
+  </body>
 </html>

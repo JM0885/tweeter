@@ -1,16 +1,12 @@
-header {
-  height: 400px;
+header.display {
+  height: 520px;
   width: 100%;
-  background-color: #c27b00;
-
+  padding-top: 150px;
+  background-color: #3600e6;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
-.avatar {
-  display: flex;
-  justify-content: center;
-}
-
-.name {
-  display: flex;
-  justify-content: center;
+header div {
+  text-align: center;
+  color: rgb(233, 222, 222);
 }
