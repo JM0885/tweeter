@@ -142,7 +142,7 @@ $('.container').find('form').on('submit', function(event) {
   const $form = $(event.target);
   const $textbox = $form.find('#tweet_input')
   const $tweet = $textbox.val();
-
+  
   const counterValue = 140;
   if ($tweet === "") {
     $('.error-message').html("Please enter your tweet.");
