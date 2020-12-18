@@ -19,5 +19,10 @@ Tweeter is a simple, single-page Twitter clone built during Lighthouse Labs usin
 - MD5
 - Flexbox
 
+## Screenshots
 
-
+!["Screenshot of landing page"](https://github.com/JM0885/tweeter/blob/master/DOCS/landingPage.png)
+!["Screenshot of composing a tweet"](https://github.com/JM0885/tweeter/blob/master/DOCS/composeTweet.png)
+!["Screenshot of character limit exceeded"](https://github.com/JM0885/tweeter/blob/master/DOCS/exceedLimit.png)
+!["Screenshot of empty tweet error"](https://github.com/JM0885/tweeter/blob/master/DOCS/emptyTweetErr.png)
+!["Screenshot of scroll up page button"](https://github.com/JM0885/tweeter/blob/master/DOCS/scrollUp.png)
